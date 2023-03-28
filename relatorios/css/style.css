@@ -1,0 +1,48 @@
+.paginate_button{
+	border: none;
+	padding: 10px;
+}
+*{margin: 0; padding: 0;}
+navbar{
+    background-color: #06357b ;
+}
+/*  */
+
+.headee{
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.section-container{
+    background-color: rgba(33,150,243,0.7) !important;
+    border-radius: 10px;
+    padding: 80px;
+    color: #cdcdcd;
+    font-size: 22px;
+}
+.btn-outline-secondary{
+    background-color: aliceblue;
+}
+.box-filter{
+    margin-top: 100px;
+}
+/* table th {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+} */
+/* --------------------------CART PAGE */
+.form-price{
+    width: 50% !important;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}

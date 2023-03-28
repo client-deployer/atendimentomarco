@@ -1,0 +1,32 @@
+.grid {
+    font-family: Tahoma, sans-serif;
+    
+    display: grid;
+    grid-template-columns: 200px 200px auto 200px;
+  }
+  
+  .grid-item {
+    height: 50px;
+    padding: 8px;
+    border: 1px solid grey;
+  }
+  
+  .a {
+    background-color: #76daff;
+    
+  }
+  
+  .b {
+    background-color: #76daff;
+ 
+  }
+  
+  .c {
+    background-color: #76daff;
+   
+  }
+  
+  .d {
+    background-color: #76daff;
+   
+  }

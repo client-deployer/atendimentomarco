@@ -1,0 +1,376 @@
+
+*{margin: 0; padding: 0;}
+navbar{
+    background-color: #06357b ;
+}
+/*  */
+
+.headee{
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.section-container{
+    background-color: rgba(33,150,243,0.7) !important;
+    border-radius: 10px;
+    padding: 80px;
+    color: #cdcdcd;
+    font-size: 22px;
+}
+.btn-outline-secondary{
+    background-color: aliceblue;
+}
+.box-filter{
+    margin-top: 100px;
+}
+/* table th {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+} */
+/* --------------------------CART PAGE */
+.form-price{
+    width: 50% !important;
+}
+
+
+*{margin: 0; padding: 0;}
+navbar{
+    background-color: #06357b ;
+}
+/*  */
+
+.headee{
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.section-container{
+    background-color: rgba(33,150,243,0.7) !important;
+    border-radius: 10px;
+    padding: 80px;
+    color: #cdcdcd;
+    font-size: 22px;
+}
+.btn-outline-secondary{
+    background-color: aliceblue;
+}
+.box-filter{
+    margin-top: 100px;
+}
+/* table th {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+} */
+/* --------------------------CART PAGE */
+.form-price{
+    width: 50% !important;
+}
+.largura{
+    width: 12000px auto;
+}
+
+.font-senha{
+    font-size: 7.5rem;
+}
+/* NUMERO CLI E CAIXA */
+.font-titulos{
+    font-size: 5rem;
+}
+/* VENDEDOR E CLIENTE */
+.font-vc{
+    font-size: 3rem;
+   
+}
+.li{
+    list-style-type:none;
+    
+   
+}
+.li>h1{
+    font-size:3.05rem;
+}
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+        width: 100%;
+    }
+.img{
+    position: absolute;
+  width: 30%;
+  bottom: 10px;
+  
+   
+  } 
+
+
+
+
+
+
+
+
+
+
+  /*------------------------------------------------ESTOQUISTA SECTION  TABS */
+  .project-tab {
+
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e !important;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.project-tab .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #0062cc;
+    font-size: 16px;
+    font-weight: 600;
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+
+.project-tab a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: #0d469f !important;
+    border-color: #007fff #007fff #fff;
+}
+
+/*------------------------------------------------ DATA TABLE ESTOQUE------------------------ */
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #43c0f5; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d469f; 
+  }
+
+
+  /* BUTTON CHECKBOX CHEGADO PRODUTO */
+  * *** The Checkboxes *** */
+label.btn.toggle-checkbox > i.fa:before { content:"\f096"; }
+    label.btn.toggle-checkbox.active > i.fa:before { content:"\f046"; }
+
+label.btn.active { box-shadow: none; }
+label.btn.primary.active {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #ffffff;
+    box-shadow: none;
+}
+label.btn.info.active {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #ffffff;
+    box-shadow: none;
+}
+label.btn.success.active {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #ffffff;
+    box-shadow: none;
+}
+label.btn.warning.active {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    color: #ffffff;
+    box-shadow: none;
+}
+label.btn.danger.active {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: #ffffff;
+    box-shadow: none;
+}
+label.btn.inverse.active {
+    background-color: #222222;
+    border-color: #111111;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------------TABLE MODAL  ------------------------------------*/
+
+
+
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+
+/* -------------------------------------------------------- */
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: #4245a8;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+  }
+  
+
+/* ------------UPLOAD IMAGE ---------------------------------------------- */
+
+
+.center {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .form-input {
+    width:350px;
+    padding:20px;
+    background:#fff;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                3px 3px 7px rgba(94, 104, 121, 0.377);
+  }
+
+  .form-input img {
+    width:100%;
+    display:none;
+    margin-bottom:30px;
+  }
+  .form-input input {
+    display:none;
+  }
+  
+/* -------------------------GALERIA------------------------ */
+.gallery {
+    width: 640px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+  
+  .gallery > div {
+    position: relative;
+    float: left;
+    padding: 5px;
+  }
+  
+  .gallery > div > img {
+    display: block;
+    width: 200px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+  }
+  
+  .gallery > div:hover {
+    z-index: 1;
+  }
+  
+  .gallery > div:hover > img {
+    transform: scale(3.5,3.5);
+    transition: .3s transform;
+  }
+  
+  .cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  /* DATA TABLE MAPEAMENTO  */
+  .dtHorizontalExampleWrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #dtHorizontalExample th, td {
+    white-space: nowrap;
+  }
+  
+  table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting_asc:after,
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_asc_disabled:after,
+  table.dataTable thead .sorting_asc_disabled:before,
+  table.dataTable thead .sorting_desc:after,
+  table.dataTable thead .sorting_desc:before,
+  table.dataTable thead .sorting_desc_disabled:after,
+  table.dataTable thead .sorting_desc_disabled:before {
+   bottom: .5em;
+  }
+  thead input {
+    width: 100%;
+}

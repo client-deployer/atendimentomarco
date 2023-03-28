@@ -1,0 +1,58 @@
+  .imagem-menu {
+      width: 50%; /* especifica a largura da imagem em 50% */
+      height: auto; /* mantém a proporção da altura */
+   }
+
+*{margin: 0; padding: 0;}
+navbar{
+    background-color: #06357b ;
+}
+/*  */
+
+.headee{
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.section-container{
+    background-color: rgba(33,150,243,0.7) !important;
+    border-radius: 10px;
+    padding: 80px;
+    color: #cdcdcd;
+    font-size: 22px;
+}
+.btn-outline-secondary{
+    background-color: aliceblue;
+}
+.box-filter{
+    margin-top: 100px;
+}
+/* table th {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+} */
+/* --------------------------CART PAGE */
+.form-price{
+    width: 50% !important;
+}
+
+/* CARD SIZE*/
+
+.card-size{
+    height: 390px !important;
+    width: 100%;
+}
+.img-fluid, .modal-dialog.cascading-modal.modal-avatar .modal-header, .video-fluid {
+    max-width: 100% !important;
+    height: max-content !important;
+}
+img{
+    max-height: 137px !important
+}
+
+.img-demon{
+    width: 78%;
+}
+thead input {
+    width: 100%;
+}

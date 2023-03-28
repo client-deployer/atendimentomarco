@@ -1,0 +1,6 @@
+{
+    "name": "joaov/recol-nf",
+    "require": {
+        "nfephp-org/sped-nfe": "^5.1"
+    }
+}

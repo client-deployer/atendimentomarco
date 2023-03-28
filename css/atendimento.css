@@ -1,0 +1,72 @@
+
+*{margin: 0; padding: 0;}
+navbar{
+    background-color: #06357b ;
+}
+/*  */
+
+.headee{
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.section-container{
+    background-color: rgba(33,150,243,0.7) !important;
+    border-radius: 10px;
+    padding: 80px;
+    color: #cdcdcd;
+    font-size: 22px;
+}
+.btn-outline-secondary{
+    background-color: aliceblue;
+}
+.box-filter{
+    margin-top: 100px;
+}
+/* table th {
+    font-size: 0.8rem !important;
+    font-weight: 400;
+} */
+/* --------------------------CART PAGE */
+.form-price{
+    width: 50% !important;
+}
+.largura{
+    width: 12000px auto;
+}
+
+.font-senha{
+    font-size: 10.5rem;
+}
+/* NUMERO CLI E CAIXA */
+.font-titulos{
+    font-size: 5rem;
+}
+/* VENDEDOR E CLIENTE */
+.font-vc{
+    font-size: 3rem;
+   
+}
+.li{
+    list-style-type:none;
+    
+   
+}
+.li>h1{
+    font-size:5rem;
+}
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+        width: 100%;
+    }
+.img{
+    position: absolute;
+  width: 30%;
+  bottom: 10px;
+  
+   
+  } 

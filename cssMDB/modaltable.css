@@ -1,0 +1,183 @@
+/* Modal table */
+.modal-table {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+    color: black;
+    min-width: 600px;
+  }
+  
+  .modal-table th,
+  td {
+    padding: 12px 10px;
+  }
+  
+  .modal-table thead {
+    background-color: #cecece;
+  }
+  
+  .modal-table tr:nth-child(even) {
+    background-color: #cecece;
+  }
+  
+  /* Modal Header */
+  .modal-header-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .modal-new-file {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  .modal-new-file svg {
+    display: flex;
+  }
+  
+  .modal-new-file:hover {
+    color: black;
+  }
+  
+  .modal-new-file input[type="file"] {
+    display: none;
+  }
+  
+  /* Modal body */
+  .modal-body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .modal-body::-webkit-scrollbar-track {
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background: #fff;
+  }
+  
+  .modal-body::-webkit-scrollbar-thumb {
+    background: #8b8b8b;
+    border-radius: 8px;
+  }
+  
+  .modal-body::-webkit-scrollbar-thumb:hover {
+    background: #cecece;
+  }
+  
+  /* Select with search */
+  ::selection {
+    color: #fff;
+    background: #4285f4;
+  }
+  
+  .wrapper {
+    max-width: 370px;
+    width: 100%;
+  }
+  
+  .select-btn,
+  li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .select-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #4285f4;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 4px;
+    justify-content: space-between;
+  }
+  
+  .wrapper.active .select-btn i {
+    transform: rotate(-180deg);
+  }
+  
+  .content {
+    z-index: 3;
+    display: none;
+    padding: 1.25rem;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #4285f4;
+  }
+  
+  .wrapper.active .content {
+    display: block;
+  }
+  
+  .content .search {
+    position: relative;
+  }
+  
+  .search svg {
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  
+  .search input {
+    padding: 0.5rem 40px;
+    transition: all 0.1s;
+    width: 100%;
+    outline: none;
+    overflow: hidden;
+    border: 2px solid none;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #b3b3b3;
+  }
+  
+  .search input:focus {
+    border-color: #4285f4;
+  }
+  
+  .search input::placeholder {
+    color: #bfbfbf;
+  }
+  
+  .options {
+    padding: 0;
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 200px;
+  }
+  
+  .options li {
+    font-size: 1rem;
+    padding: 0.625rem;
+  }
+  
+  .options li:hover,
+  li.selected {
+    border-radius: 4px;
+    background: #f2f2f2;
+  }
+  
+  .options::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  
+  .options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+  }
+  
+  .options::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+  }
+  

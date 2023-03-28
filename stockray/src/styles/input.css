@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+}
+
+table, th, td, tr, caption {
+  background-color: #52525b;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+  border: 2px solid white;
+  border-bottom: none;
+  padding: 0.25rem 0;
+}

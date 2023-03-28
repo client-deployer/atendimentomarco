@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="stylesheet" href="src/styles/input.css">
+  <title>NF - Main Page</title>
+</head>
+<body class="bg-[#464646]">
+
+  <!-- Wrapper -->
+  <div class="flex">
+
+    <!-- Side Bar -->
+    <div class="hidden lg:flex min-w-[200px] bg-[#333333] min-h-screen px-6 py-3 gap-8 flex flex-col self-start">
+      <div>
+        <img src="src/img/Data Page XML Small.png" alt="">
+      </div>
+      <div class="flex flex-col gap-4">
+        <button class="bg-[#367362] rounded-md py-3 px-2 text-white rounded-md hover:scale-105 transition-all ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#367362] transition-all disabled:opacity-50 disabled:hover:bg-[#367362]">Importar XML</button>
+        <button class="bg-[#367362] rounded-md py-3 px-2 text-white rounded-md hover:scale-105 transition-all ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#367362] transition-all disabled:opacity-50 disabled:hover:bg-[#367362]">Notas Pendentes</button>
+        <button class="bg-[#367362] rounded-md py-3 px-2 text-white rounded-md hover:scale-105 transition-all ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#367362] transition-all disabled:opacity-50 disabled:hover:bg-[#367362]">Notas lançadas</button>
+        <button class="bg-[#367362] rounded-md py-3 px-2 text-white rounded-md hover:scale-105 transition-all ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#367362] transition-all disabled:opacity-50 disabled:hover:bg-[#367362]">Botão</button>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col">
+      <!-- Header -->
+      <div class="bg-[#5a5a5a] flex justify-between items-center py-3 px-8">
+        <div class="flex items-center gap-3">
+          <i class="ph-list text-2xl text-white block lg:hidden"></i>
+          <h1 class="hidden sm:block text-white text-2xl">Gestão de XML</h1>
+        </div>
+        <div class="flex items-center gap-4">
+          <h1 class="text-white">Jefté</h1>
+          <img class="hidden lg:block" src="src/img/pp.png" alt="">
+          <i class="ph-sign-out text-white text-2xl"></i>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="flex self-center mt-6 w-full overflow-x-auto">
+        <table class="mx-4 w-full rounded-md text-center">
+          <tr class="bg-[#5a5a5a]">
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Payment date</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Issuer</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Value</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Number</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Release date</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Acc. Class.</th>
+            <th class="border-2 border-[#333333] font-normal py-4 text-[#efefef]">Status</th>
+          </tr>
+          <tr>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">21/12/2022</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">Jefté Medeiros</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">742617000027</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">99125003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">15/12/2003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">????????</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">Start?</td>
+          </tr>
+          <tr>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">21/12/2022</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">Jefté Medeiros</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">742617000027</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">99125003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">15/12/2003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">????????</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8"><h1 class="rounded-md bg-[#c98c9d] px-3">Negada</h1></td>
+          </tr>
+          <tr>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">21/12/2022</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">Jefté Medeiros</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">742617000027</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">99125003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">15/12/2003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">????????</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8"><h1 class="rounded-md bg-[#367362]">Enviada</h1></td>
+          </tr>
+          <tr>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">21/12/2022</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">Jefté Medeiros</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">742617000027</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">99125003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">15/12/2003</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8">????????</td>
+            <td class="border-2 border-[#333333] bg-[#929292] text-[#efefef] py-1 px-8"><h1 class="rounded-md bg-[#bbd130]">Pendente</h1></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>  
+
+</body>
+</html>
