@@ -82,18 +82,20 @@ abstract Class historicocompra{
     public static function GetSales($itemestoque){
         $url= $url = "10.15.32.11:8000/historicodecompras/$itemestoque";
       $dados=  receberdadosapi($url);
+      $dados = json_encode($dados);
+      $dados = json_decode($dados);
       
  foreach ($dados as $item) {
-  $revenda= $item[0];
-    $numeronota = $item[1];
-    $datanota = new DateTime($item[2]);
+  $revenda= $item->revenda;
+    $numeronota = $item->numeroNotaFiscal;
+    $datanota = new DateTime($item->dta_entrada_saida);
     $datanota= date_format($datanota,"d/m/Y ");
-    $nomecliente = $item[3];
-    $valortotal = $item[4];
-    $quantidade = $item[5];
+    $nomecliente = $item->nomeCliente;
+    $valortotal = $item->valorTotalNota;
+    $quantidade = $item->quantidadeComprada;
     echo "
           <tr>
-
+          <td>".$item->transacao." </td>
           <td>".$revenda." </td>
           <td>
            $numeronota   </td>
