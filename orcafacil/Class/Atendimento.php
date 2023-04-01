@@ -69,7 +69,13 @@ abstract Class Infoproducts{
       }
         }
 
-
+        abstract Class relacaoItens{
+            public static function GetSales($itemestoque){
+                $url= $url = "10.15.32.11:8000/historicodecompras/$itemestoque";
+              $dados=  receberdadosapi($url);
+            
+        
+            }}        
 
 
 abstract Class historicocompra{

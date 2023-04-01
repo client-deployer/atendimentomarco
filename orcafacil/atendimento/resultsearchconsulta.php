@@ -55,7 +55,7 @@ $consulta = new Consulta($_POST['codProduto']);
             <span class=''><?php echo $data->descricao ?> </span>
           </td>
 
-          <td id='itemestoque<?php echo $i ?>' class=''><button type='button' class='btn btn-primary' data-toggle='modal' data-target='.bd-example-modal-lg'><?php echo $data->itemestoque; ?></button></td>
+          <td id='<?php echo $data->itemestoque ?>' class=''><button id="<?php echo $data->itemestoque ?>" type='button' class='btn btn-primary view_relacao' data-toggle='' data-target='.bd-example-modal-lg view_relacao'><?php echo $data->itemestoque; ?></button></td>
 
           <td id='publico<?php echo $i ?>' class=''>
             <?php echo $data->codigopublico; ?>
@@ -214,6 +214,25 @@ $(document).ready(function () {
 				});
 			});
 
+      $(document).on('click','.view_relacao', function(){
+					var itemestoque = $(this).attr("id");
+          event.stopPropagation();
+				//	alert(itemestoque);
+					//Verificar se há valor na variável "user_id".
+					if(itemestoque !== ''){
+						var dados = {
+							itemestoque: itemestoque
+						};
+          //  alert(itemestoque)
+						$.post('modalrelacao.php', dados, function(retorna){
+							//Carregar o conteúdo para o usuário
+							$("#retorno").html(retorna);
+							$('#visul_retorno').modal('show'); 
+						});
+					}
+				});
+			
+
 </script>
 
 
@@ -236,260 +255,18 @@ $(document).ready(function () {
 
 
 
-  <div class="modal modal-fluid fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row indigo text-white p-3 "><i class="fas fa-clipboard-list"></i> &nbsp;&nbsp; <strong>ESPECIFICAÇÕES</strong></div>
-              <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table class="table blue-gradient text-white">
-                  <thead>
-                    <tr>
-                      <th scope="col">Utilização</th>
-                      <th scope="col">Marca</th>
-                      <th scope="col">Cod Publico</th>
-                      <th scope="col">Cod Fabrica</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="col-md-6 ">
-              <div class="row indigo text-white p-3"><i class="fas fa-project-diagram"></i>&nbsp; <strong>ITENS DEPENDENTE</strong> <a class="btn btn-primary btn-sm float-right mt-0" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  <i class="fas fa-plus"></i>
-                </a></div>
-              <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table class="table blue-gradient text-white  mb-0">
-                  <thead class="blue-gradient text-white">
-                    <tr>
-                      <th scope="col">Codigo</th>
-                      <th scope="col">Descrição</th>
-                      <th scope="col"> Disponivel</th>
-                      <th scope="col">Valor venda</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="collapse" id="collapseExample">
-                      <th scope="row">
-                        <div class="input-group input-group-sm ">
-
-                          <input type="text" class="form-control" placeholder="insira" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </th>
-                      <td>
-                        <div class="input-group input-group-sm ">
-
-                          <input type="text" class="form-control" placeholder="insira" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </td>
-
-                      <td>
-
-
-                        <button type="submit" class="btn btn-default btn-sm mt-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">OK</button>
-
-                      </td>
-
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrição</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrição</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrição</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrição</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-
-
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="row indigo text-white p-3"><i class="fas fa-bezier-curve"></i>&nbsp;<strong> ITENS RELACIONADOS</strong><a class="btn btn-primary btn-sm float-right mt-0" type="button" data-toggle="collapse" data-target="#colapse" aria-expanded="false" aria-controls="colapse">
-                  <i class="fas fa-plus"></i>
-                </a></div>
-              <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table class="table blue-gradient text-white">
-                  <thead class="blue-gradient text-white">
-                    <tr>
-                      <th scope="col">Codigo</th>
-                      <th scope="col">Descrição</th>
-                      <th scope="col"> Disponivel</th>
-                      <th scope="col">Valor venda</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="collapse" id="colapse">
-                      <th scope="row">
-                        <div class="input-group input-group-sm ">
-
-                          <input type="text" class="form-control" placeholder="insira" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </th>
-                      <td>
-                        <div class="input-group input-group-sm ">
-
-                          <input type="text" class="form-control" placeholder="insira" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </td>
-
-                      <td>
-
-
-                        <button type="submit" class="btn btn-default btn-sm mt-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">OK</button>
-
-                      </td>
-
-                    <tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrevendo produtos</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrevendo produtos</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>descrevendo produtos</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row indigo text-white p-3"><i class="far fa-images"></i>&nbsp; <strong>IMAGENS DO PRODUTO</strong></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <div class="row">
-
-                <div class="col-md-6">
-                  <form action="" enctype="multipart/form-data">
-
-                    <div class="center">
-                      <div class="form-input">
-                        <div class="preview"> <img id="file-ip-1-preview" src="../img/produto.png" class="rounded " alt="inserir imagem" width="100">
-
-
-                          <label for="file-ip-1" class="text-dark">Enviar Imagem</label>
-                          <input class="" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-                        </div>
-
-                      </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6"><img src="../img/produto.png" class="rounded float-left" alt="inserir imagem" width="100">
-                  <div class="file-input">
-                    <input type="file" name="imagedois" id="file-input" class="file-input__input" />
-                    <label class="file-input__label" for="file-input">
-
-                      <i class="fas fa-cloud-upload-alt"></i>
-
-                      <span> &nbsp;inserir imagem</span></label>
-                  </div>
-
-                </div>
-                <div class="col-md-6"><img src="../img/produto.png" class="rounded float-left" alt="inserir imagem" width="100">
-                  <div class="file-input">
-                    <input type="file" name="imagetres" id="file-input" class="file-input__input" />
-                    <label class="file-input__label" for="file-input">
-
-                      <i class="fas fa-cloud-upload-alt"></i>' '
-
-                      <span> &nbsp;inserir imagem</span></label>
-                  </div>
-
-                </div>
-                <div class="col-md-6"><img src="../img/produto.png" class="rounded float-left" alt="inserir imagem" width="100">
-                  <div class="file-input">
-                    <input type="image" name="imagequatro" id="file-input" class="file-input__input" />
-                    <label class="file-input__label" for="file-input">
-
-                      <i class="fas fa-cloud-upload-alt"></i>
-
-                      <span> &nbsp;inserir imagem</span></label>
-                  </div>
-
-                </div><button type="submit" class="btn btn-default btn-lg btn-block mb-2">ENVIAR IMAGENS</button>
-                </form>
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-            </div>
+  <div id='visul_retorno'class="modal modal-fluid fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="visulUsuarioModalLabel">Item Especificacoes</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+      <div id="retorno">
+        
           </div>
         </div>
       </div>
