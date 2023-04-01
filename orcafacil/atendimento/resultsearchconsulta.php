@@ -32,8 +32,7 @@ $consulta = new Consulta($_POST['codProduto']);
               </th>
               <th > Disponivel
               </th>
-                  <th > Rastreio
-              </th>
+               
            
             </tr>
           </thead>
@@ -95,9 +94,7 @@ $consulta = new Consulta($_POST['codProduto']);
 
 
           </td>
-          <td>
-           <button class='btn btn-warning outline'> Rastreio </button>
-</td>
+  
 
          
 
@@ -128,8 +125,8 @@ $consulta = new Consulta($_POST['codProduto']);
               </th>
               <th > Disponivel
               </th>
-            <th > Rastreio
-              </th>
+          
+              
         
        
             
@@ -212,7 +209,7 @@ $(document).ready(function () {
 						});
 					}
 				});
-			});
+		
 
       $(document).on('click','.view_relacao', function(){
 					var itemestoque = $(this).attr("id");
@@ -231,6 +228,8 @@ $(document).ready(function () {
 						});
 					}
 				});
+
+      });
 			
 
 </script>
