@@ -230,21 +230,6 @@ $relacao=(get_relacao($itemestoque));
             <div class="col-md-6">
               <div class="row indigo text-white p-3"><i class="far fa-images"></i>&nbsp; <strong>IMAGENS DO PRODUTO</strong></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <div class="row">
 
                 <div class="col-md-6">
@@ -274,15 +259,5 @@ $relacao=(get_relacao($itemestoque));
                 </div>
                 </form>
               </div>
-
-
-
-
-
-
-
-
-
           </div>
-
             </div>

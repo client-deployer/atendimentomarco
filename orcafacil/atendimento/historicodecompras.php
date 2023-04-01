@@ -3,6 +3,8 @@
   <table id="dtBasicExample" style="text-align:center;" class=" blue-gradient  text-white">
     <thead>
       <tr>
+      <th class="th-sm text-center"> Transacao
+        </th>
       <th class="th-sm text-center"> Revenda
         </th>
         <th class="th-sm text-center">Numero da nota
