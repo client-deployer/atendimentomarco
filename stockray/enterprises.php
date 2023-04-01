@@ -1,8 +1,0 @@
-<ul class="flex gap-8 flex-wrap justify-center mb-4 mt-2">
-        <li><button onclick="setFilter('company','01')" class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" id="empresa" value="01">REVENDA 1</button></li>
-        <li><button onclick="setFilter('company', '02')" class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" id="empresa" value="02">REVENDA 2</button></li>
-        <li><button onclick="setFilter('company', '03')" class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" id="empresa" value="03">REVENDA 3</button></li>
-        <li><button onclick="setFilter('company', '04')" class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" id="empresa" value="04">REVENDA 4</button></li>
-        <li><button class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" onClick="setTableItens()">Buscar</button></li>
-        <li><button class="bg-zinc-700 w-[130px] lg:w-full py-2 px-3 rounded-md text-white hover:cursor-pointer hover:scale-105 transition:all ease-in-out duration-100" onClick="clearTableFilter()">Limpar filtros</button></li>
-      </ul>

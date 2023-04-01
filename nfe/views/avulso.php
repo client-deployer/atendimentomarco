@@ -1,9 +1,0 @@
-
-
-
-<?php 
-require 'templateavulso.php';
-
-
-
-?>
